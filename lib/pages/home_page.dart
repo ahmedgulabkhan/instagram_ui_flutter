@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui_flutter/tabs/home_tab.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,9 +12,23 @@ class _HomePageState extends State<HomePage> {
   dynamic _tabs = [];
 
   @override
+  void initState() {
+    super.initState();
+    setState(() {
+      _tabs = [
+        HomeTab(),
+        HomeTab(),
+        HomeTab(),
+        HomeTab(),
+        HomeTab(),
+      ];
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _tabs.length == 0 ? CircularProgressIndicator(backgroundColor: Colors.grey) : _tabs[_currentTab],
+      body: _tabs.length == 0 ? Center(child: CircularProgressIndicator(backgroundColor: Colors.grey, strokeWidth: 1.0)) : _tabs[_currentTab],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentTab,
         onTap: (int value) {
@@ -22,26 +37,11 @@ class _HomePageState extends State<HomePage> {
           });
         },
         items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, size: 30.0),
-            title: SizedBox.shrink(),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, size: 30.0),
-            title: SizedBox.shrink(),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, size: 30.0),
-            title: SizedBox.shrink(),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, size: 30.0),
-            title: SizedBox.shrink(),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, size: 30.0),
-            title: SizedBox.shrink(),
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home, color: Colors.black)),
+          BottomNavigationBarItem(icon: Icon(Icons.home, color: Colors.black)),
+          BottomNavigationBarItem(icon: Icon(Icons.home, color: Colors.black)),
+          BottomNavigationBarItem(icon: Icon(Icons.home, color: Colors.black)),
+          BottomNavigationBarItem(icon: Icon(Icons.home, color: Colors.black)),
         ]
       ),
     );
