@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:instagram_ui_flutter/tabs/activity_tab.dart';
 import 'package:instagram_ui_flutter/tabs/home_tab.dart';
+import 'package:instagram_ui_flutter/tabs/profile_tab.dart';
+import 'package:instagram_ui_flutter/tabs/search_tab.dart';
+import 'package:instagram_ui_flutter/tabs/upload_tab.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -18,10 +22,10 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _tabs = [
         HomeTab(),
-        HomeTab(),
-        HomeTab(),
-        HomeTab(),
-        HomeTab(),
+        SearchTab(),
+        UploadTab(),
+        ActivityTab(),
+        ProfileTab(),
       ];
     });
   }

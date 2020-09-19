@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeTab extends StatelessWidget {
   @override
@@ -19,8 +20,8 @@ class HomeTab extends StatelessWidget {
         ),
         actions: <Widget>[
           Container(
-            padding: EdgeInsets.only(right: 15.0),
-            child: Icon(Icons.send, color: Colors.black, size: 30.0),
+            padding: EdgeInsets.only(right: 20.0),
+            child: Icon(FontAwesomeIcons.paperPlane, color: Colors.black),
           )
         ],
       ),
