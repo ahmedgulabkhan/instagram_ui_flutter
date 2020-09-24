@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ActivityTile extends StatelessWidget {
+class ActivityTileAlt extends StatelessWidget {
 
   final String username;
+  final bool mention;
 
-  ActivityTile({
-    this.username
+  ActivityTileAlt({
+    this.username,
+    this.mention
   });
 
   @override
@@ -13,14 +15,12 @@ class ActivityTile extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 25.0),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           CircleAvatar(
             radius: 30.0,
             backgroundColor: Colors.yellow,
           ),
-
-          SizedBox(width: 17.0),
 
           Text.rich(
             TextSpan(
@@ -28,12 +28,18 @@ class ActivityTile extends StatelessWidget {
               style: TextStyle(color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.bold),
               children: <TextSpan>[
                 TextSpan(
-                  text: ' started following you',
+                  text: mention ? ' mentioned you in a comment' : ' liked your post',
                   style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.normal),
                 ),
               ],
             ),
           ),
+
+          Container(
+            width: 35.0,
+            height: 35.0,
+            color: Colors.red,
+          )
         ],
       ),
     );
