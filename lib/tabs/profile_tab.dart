@@ -89,29 +89,204 @@ class ProfileTab extends StatelessWidget {
               children: <Widget>[
                 Container(
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Container(
-                        width: MediaQuery.of(context).size.width/3 - 30,
-                        height: MediaQuery.of(context).size.width/3 - 30,
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
                         color: Colors.red,
                       ),
                       Container(
-                        width: MediaQuery.of(context).size.width/3 - 30,
-                        height: MediaQuery.of(context).size.width/3 - 30,
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
                         color: Colors.red,
                       ),
                       Container(
-                        width: MediaQuery.of(context).size.width/3 - 30,
-                        height: MediaQuery.of(context).size.width/3 - 30,
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
                         color: Colors.red,
                       ),
                     ],
                   ),
                 )
               ],
-            )
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 40.0),
           ],
         ),
       )
