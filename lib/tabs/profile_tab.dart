@@ -83,7 +83,35 @@ class ProfileTab extends StatelessWidget {
               ),
             ),
 
-            Divider()
+            Divider(),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 30,
+                        height: MediaQuery.of(context).size.width/3 - 30,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 30,
+                        height: MediaQuery.of(context).size.width/3 - 30,
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 30,
+                        height: MediaQuery.of(context).size.width/3 - 30,
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            )
           ],
         ),
       )
