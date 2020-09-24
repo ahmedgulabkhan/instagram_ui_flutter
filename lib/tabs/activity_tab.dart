@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui_flutter/widgets/activity_tile.dart';
+import 'package:instagram_ui_flutter/widgets/activity_tile_alt.dart';
 
 class ActivityTab extends StatelessWidget {
   @override
@@ -13,6 +14,8 @@ class ActivityTab extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           ActivityTile(username: 'samwilson'),
+          ActivityTileAlt(username: 'samwilson', mention: true),
+          ActivityTileAlt(username: 'samwilson', mention: false),
         ],
       ),
     );
