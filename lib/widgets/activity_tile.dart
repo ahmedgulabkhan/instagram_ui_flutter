@@ -11,7 +11,7 @@ class ActivityTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 25.0),
+      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
@@ -20,18 +20,23 @@ class ActivityTile extends StatelessWidget {
             backgroundColor: Colors.yellow,
           ),
 
-          SizedBox(width: 17.0),
+          SizedBox(width: 10.0),
 
-          Text.rich(
-            TextSpan(
-              text: username,
-              style: TextStyle(color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.bold),
-              children: <TextSpan>[
-                TextSpan(
-                  text: ' started following you',
-                  style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.normal),
-                ),
-              ],
+          Container(
+            width: MediaQuery.of(context).size.width/1.8,
+            child: Text.rich(
+              TextSpan(
+                text: username,
+                style: TextStyle(color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.bold),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: ' started following you',
+                    style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.normal),
+                  ),
+                ],
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
             ),
           ),
         ],

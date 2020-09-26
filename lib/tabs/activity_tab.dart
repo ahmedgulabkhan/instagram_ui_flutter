@@ -13,9 +13,16 @@ class ActivityTab extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          ActivityTile(username: 'samwilson'),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20.0, 20.0, 0.0, 5.0),
+            child: Text('Today', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0)),
+          ),
           ActivityTileAlt(username: 'samwilson', mention: true),
-          ActivityTileAlt(username: 'samwilson', mention: false),
+          ActivityTile(username: 'samwilson'),
+          ActivityTileAlt(username: 'chris_john', mention: true),
+          ActivityTile(username: 'chris_john'),
+          ActivityTileAlt(username: 'danny_smith94', mention: false),
+          ActivityTileAlt(username: 'danny_smith94', mention: true),
         ],
       ),
     );
