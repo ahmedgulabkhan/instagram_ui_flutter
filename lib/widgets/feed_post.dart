@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class FeedPost extends StatelessWidget {
 
@@ -30,6 +31,30 @@ class FeedPost extends StatelessWidget {
               Icon(Icons.more_vert)
             ],
           ),
+        ),
+
+        Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.width,
+          color: Colors.red,
+        ),
+
+        Container(
+          padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
+          child: Row(
+            children: <Widget>[
+              Icon(FontAwesomeIcons.heart, size: 25.0),
+              SizedBox(width: 15.0),
+              Icon(FontAwesomeIcons.comment, size: 25.0),
+              SizedBox(width: 15.0),
+              Icon(FontAwesomeIcons.paperPlane, size: 25.0),
+            ],
+          ),
+        ),
+
+        Container(
+          padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
+          child: Text('56 Likes')
         )
       ],
     );
