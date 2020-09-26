@@ -4,14 +4,19 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class FeedPost extends StatelessWidget {
 
   final String username;
+  final int likes;
+  final String time;
 
   FeedPost({
-    this.username
+    this.username,
+    this.likes,
+    this.time
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
           padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
@@ -52,9 +57,14 @@ class FeedPost extends StatelessWidget {
           ),
         ),
 
-        Container(
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 15.0),
+          child: Text('$likes likes', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0)),
+        ),
+
+        Padding(
           padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
-          child: Text('56 Likes')
+          child: Text('$time ago', style: TextStyle(fontSize: 12.0, color: Colors.grey)),
         )
       ],
     );

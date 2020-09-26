@@ -29,7 +29,11 @@ class HomeTab extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            FeedPost(username: 'samwilson')
+            FeedPost(username: 'samwilson', likes: 102, time: '2 hours'),
+            FeedPost(username: 'eddisonalfred', likes: 156, time: '6 hours'),
+            FeedPost(username: 'adelle_klarke', likes: 56, time: '2 days'),
+            FeedPost(username: 'matthewsimpson', likes: 224, time: '1 week'),
+            FeedPost(username: 'ryanconnor', likes: 112, time: '2 weeks'),
           ],
         ),
       ),
