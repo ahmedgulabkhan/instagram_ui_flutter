@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:instagram_ui_flutter/widgets/feed_post.dart';
 
 class HomeTab extends StatelessWidget {
   @override
@@ -25,8 +26,12 @@ class HomeTab extends StatelessWidget {
           )
         ],
       ),
-      body: Center(
-        child: Text('This is the home tab'),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            FeedPost(username: 'samwilson')
+          ],
+        ),
       ),
     );
   }
