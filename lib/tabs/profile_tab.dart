@@ -28,7 +28,7 @@ class ProfileTab extends StatelessWidget {
                     children: <Widget>[
                       CircleAvatar(
                         radius: 45.0,
-                        backgroundColor: Colors.yellow,
+                        backgroundImage: AssetImage('assets/Mike Tyler.jpg'),
                       ),
 
                       Column(
@@ -94,46 +94,17 @@ class ProfileTab extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story1.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story8.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
-
-            SizedBox(height: 2.0),
-
-            Column(
-              children: <Widget>[
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story2.jpg', fit: BoxFit.cover),
                       ),
                     ],
                   ),
@@ -152,46 +123,17 @@ class ProfileTab extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story4.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story5.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
-
-            SizedBox(height: 2.0),
-
-            Column(
-              children: <Widget>[
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story3.jpg', fit: BoxFit.cover),
                       ),
                     ],
                   ),
@@ -210,46 +152,17 @@ class ProfileTab extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story6.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story9.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
-
-            SizedBox(height: 2.0),
-
-            Column(
-              children: <Widget>[
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width/3 - 2,
-                        height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story10.jpg', fit: BoxFit.cover),
                       ),
                     ],
                   ),
@@ -268,17 +181,104 @@ class ProfileTab extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story11.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story12.jpg', fit: BoxFit.cover),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width/3 - 2,
                         height: MediaQuery.of(context).size.width/3 - 2,
-                        color: Colors.red,
+                        child: Image.asset('assets/story13.jpg', fit: BoxFit.cover),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story14.jpg', fit: BoxFit.cover),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story15.jpg', fit: BoxFit.cover),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story16.jpg', fit: BoxFit.cover),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story17.jpg', fit: BoxFit.cover),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story18.jpg', fit: BoxFit.cover),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story19.jpg', fit: BoxFit.cover),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+
+            SizedBox(height: 2.0),
+
+            Column(
+              children: <Widget>[
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story20.jpg', fit: BoxFit.cover),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story21.jpg', fit: BoxFit.cover),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/3 - 2,
+                        height: MediaQuery.of(context).size.width/3 - 2,
+                        child: Image.asset('assets/story4.jpg', fit: BoxFit.cover),
                       ),
                     ],
                   ),

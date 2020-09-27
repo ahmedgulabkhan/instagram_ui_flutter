@@ -6,11 +6,15 @@ class FeedPost extends StatelessWidget {
   final String username;
   final int likes;
   final String time;
+  final String profilePicture;
+  final String image;
 
   FeedPost({
     this.username,
     this.likes,
-    this.time
+    this.time,
+    this.profilePicture,
+    this.image
   });
 
   @override
@@ -27,7 +31,7 @@ class FeedPost extends StatelessWidget {
                 children: <Widget>[
                   CircleAvatar(
                     radius: 20.0,
-                    backgroundColor: Colors.yellow,
+                    backgroundImage: AssetImage(profilePicture),
                   ),
                   SizedBox(width: 10.0),
                   Text(username, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0)),
@@ -41,7 +45,7 @@ class FeedPost extends StatelessWidget {
         Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.width,
-          color: Colors.red,
+          child: Image.asset(image, fit: BoxFit.cover),
         ),
 
         Container(

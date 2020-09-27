@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
             activeIcon: Icon(Icons.add_circle_outline, color: Colors.black, size: 30.0)
           ),
           BottomNavigationBarItem(icon: Icon(FontAwesomeIcons.heart, color: Colors.grey), title: SizedBox.shrink(), activeIcon: Icon(FontAwesomeIcons.solidHeart, color: Colors.black)),
-          BottomNavigationBarItem(icon: CircleAvatar(backgroundColor: Colors.yellow, radius: 15.0), title: SizedBox.shrink())
+          BottomNavigationBarItem(icon: CircleAvatar(backgroundImage: AssetImage('assets/Mike Tyler.jpg'), radius: 15.0), title: SizedBox.shrink())
         ]
       ),
     );
