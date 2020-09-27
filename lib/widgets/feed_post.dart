@@ -47,12 +47,19 @@ class FeedPost extends StatelessWidget {
         Container(
           padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Icon(FontAwesomeIcons.heart, size: 25.0),
-              SizedBox(width: 15.0),
-              Icon(FontAwesomeIcons.comment, size: 25.0),
-              SizedBox(width: 15.0),
-              Icon(FontAwesomeIcons.paperPlane, size: 25.0),
+              Row(
+                children: <Widget>[
+                  Icon(FontAwesomeIcons.heart, size: 25.0),
+                  SizedBox(width: 15.0),
+                  Icon(FontAwesomeIcons.comment, size: 25.0),
+                  SizedBox(width: 15.0),
+                  Icon(FontAwesomeIcons.paperPlane, size: 25.0),
+                ],
+              ),
+              
+              Icon(FontAwesomeIcons.bookmark, size: 25.0)
             ],
           ),
         ),
