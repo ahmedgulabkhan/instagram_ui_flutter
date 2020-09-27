@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram_ui_flutter/pages/messages_page.dart';
 import 'package:instagram_ui_flutter/widgets/feed_post.dart';
 
-class HomeTab extends StatelessWidget {
+class HomeTab extends StatelessWidget {  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

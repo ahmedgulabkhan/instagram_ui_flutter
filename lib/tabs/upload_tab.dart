@@ -5,8 +5,8 @@ class UploadTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('This is the Upload tab'),
-      ),
+        child: Text('Upload a Photo/Video'),
+      )
     );
   }
 }

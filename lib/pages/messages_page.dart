@@ -9,7 +9,12 @@ class MessagesPage extends StatelessWidget {
         title: Text('mike_tyler', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 19.0)),
         elevation: 2.0,
         backgroundColor: Colors.white,
-        leading: Icon(Icons.arrow_back, color: Colors.black, size: 30.0),
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.of(context).pop();
+          },
+          child: Icon(Icons.arrow_back, color: Colors.black, size: 30.0)
+        ),
         actions: <Widget>[
           Container(
             padding: EdgeInsets.only(right: 20.0),

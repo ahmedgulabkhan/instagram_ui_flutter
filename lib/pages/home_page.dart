@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:instagram_ui_flutter/tabs/activity_tab.dart';
 import 'package:instagram_ui_flutter/tabs/home_tab.dart';
 import 'package:instagram_ui_flutter/tabs/profile_tab.dart';
@@ -30,6 +31,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  Future _pickImage() async {
+    final _image = await ImagePicker().getImage(source: ImageSource.gallery);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +50,14 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home, color: Colors.grey, size: 30.0), title: SizedBox.shrink(), activeIcon: Icon(Icons.home, color: Colors.black, size: 30.0)),
           BottomNavigationBarItem(icon: Icon(Icons.search, color: Colors.grey, size: 30.0), title: SizedBox.shrink(), activeIcon: Icon(Icons.search, color: Colors.black, size: 30.0)),
-          BottomNavigationBarItem(icon: Icon(Icons.add_circle_outline, color: Colors.grey, size: 30.0), title: SizedBox.shrink(), activeIcon: Icon(Icons.add_circle_outline, color: Colors.black, size: 30.0)),
+          BottomNavigationBarItem(
+            icon: GestureDetector(
+              onTap: _pickImage,
+              child: Icon(Icons.add_circle_outline, color: Colors.grey, size: 30.0)
+            ),
+            title: SizedBox.shrink(),
+            activeIcon: Icon(Icons.add_circle_outline, color: Colors.black, size: 30.0)
+          ),
           BottomNavigationBarItem(icon: Icon(FontAwesomeIcons.heart, color: Colors.grey), title: SizedBox.shrink(), activeIcon: Icon(FontAwesomeIcons.solidHeart, color: Colors.black)),
           BottomNavigationBarItem(icon: CircleAvatar(backgroundColor: Colors.yellow, radius: 15.0), title: SizedBox.shrink())
         ]
