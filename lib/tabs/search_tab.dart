@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui_flutter/widgets/search_categories.dart';
 
 class SearchTab extends StatelessWidget {
   @override
@@ -30,7 +31,7 @@ class SearchTab extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: 10.0),
+              SearchCategories(),
 
               Column(
                 children: <Widget>[
