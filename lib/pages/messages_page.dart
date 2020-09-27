@@ -57,7 +57,7 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/Sam Wilson.jpg'),
               radius: 30.0,
             ),
             title: Text('samwilson', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
@@ -68,7 +68,7 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/adelle.jpg'),
               radius: 30.0,
             ),
             title: Text('adelle_klarke', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
@@ -79,7 +79,7 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/eddison.jpg'),
               radius: 30.0,
             ),
             title: Text('eddison', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
@@ -90,7 +90,7 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/john.jpg'),
               radius: 30.0,
             ),
             title: Text('john_jefferson', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
@@ -101,7 +101,7 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/alfred.jpg'),
               radius: 30.0,
             ),
             title: Text('alfred_mcdonald', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
@@ -112,10 +112,10 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/joey.jpg'),
               radius: 30.0,
             ),
-            title: Text('john_smith', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
+            title: Text('joey_smith', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
             subtitle: Text('Seems like a nice idea dude', style: TextStyle(fontSize: 14.0, color: Colors.grey)),
             trailing: Icon(FontAwesomeIcons.camera, color: Colors.black),
           ),
@@ -123,10 +123,10 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/sophia.jpg'),
               radius: 30.0,
             ),
-            title: Text('tanyamitchell', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
+            title: Text('sophiaamitchell', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
             subtitle: Text('Hahaha XD', style: TextStyle(fontSize: 14.0, color: Colors.grey)),
             trailing: Icon(FontAwesomeIcons.camera, color: Colors.black),
           ),
@@ -134,10 +134,10 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/james.jpg'),
               radius: 30.0,
             ),
-            title: Text('jakesimpson', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
+            title: Text('jamessimpson', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
             subtitle: Text('Alright bro!!', style: TextStyle(fontSize: 14.0, color: Colors.grey)),
             trailing: Icon(FontAwesomeIcons.camera, color: Colors.black),
           ),
@@ -145,7 +145,7 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/nick.jpg'),
               radius: 30.0,
             ),
             title: Text('nick_white', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
@@ -156,7 +156,7 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/natasha.jpg'),
               radius: 30.0,
             ),
             title: Text('natasha', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
@@ -167,10 +167,10 @@ class MessagesPage extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              backgroundImage: AssetImage('assets/mathew.jpg'),
               radius: 30.0,
             ),
-            title: Text('matthew_hallberg', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
+            title: Text('mathew_hallberg', style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500)),
             subtitle: Text('I will get back to you', style: TextStyle(fontSize: 14.0, color: Colors.grey)),
             trailing: Icon(FontAwesomeIcons.camera, color: Colors.black),
           ),

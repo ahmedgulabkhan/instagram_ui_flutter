@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class ActivityTile extends StatelessWidget {
 
   final String username;
+  final String profilePicture;
 
   ActivityTile({
-    this.username
+    this.username,
+    this.profilePicture
   });
 
   @override
@@ -17,7 +19,7 @@ class ActivityTile extends StatelessWidget {
         children: <Widget>[
           CircleAvatar(
             radius: 30.0,
-            backgroundColor: Colors.yellow,
+            backgroundImage: AssetImage(profilePicture),
           ),
 
           SizedBox(width: 10.0),

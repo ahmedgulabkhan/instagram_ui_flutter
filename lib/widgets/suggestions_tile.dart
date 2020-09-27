@@ -4,10 +4,12 @@ class SuggestionsTile extends StatelessWidget {
 
   final String username;
   final String fullName;
+  final String profilePicture;
 
   SuggestionsTile({
     this.username,
-    this.fullName
+    this.fullName,
+    this.profilePicture
   });
 
   @override
@@ -21,7 +23,7 @@ class SuggestionsTile extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 30.0,
-                backgroundColor: Colors.yellow,
+                backgroundImage: AssetImage(profilePicture),
               ),
 
               SizedBox(width: 10.0),

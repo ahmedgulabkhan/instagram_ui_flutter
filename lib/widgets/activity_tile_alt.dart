@@ -4,10 +4,14 @@ class ActivityTileAlt extends StatelessWidget {
 
   final String username;
   final bool mention;
+  final String profilePicture;
+  final String image;
 
   ActivityTileAlt({
     this.username,
-    this.mention
+    this.mention,
+    this.profilePicture,
+    this.image
   });
 
   @override
@@ -21,7 +25,7 @@ class ActivityTileAlt extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 30.0,
-                backgroundColor: Colors.yellow,
+                backgroundImage: AssetImage(profilePicture),
               ),
 
               SizedBox(width: 10.0),
@@ -49,7 +53,7 @@ class ActivityTileAlt extends StatelessWidget {
           Container(
             width: 50.0,
             height: 50.0,
-            color: Colors.red,
+            child: Image.asset(image, fit: BoxFit.cover),
           )
         ],
       ),
