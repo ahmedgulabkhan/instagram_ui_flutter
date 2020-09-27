@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class FeedPost extends StatelessWidget {
+class FeedPost extends StatefulWidget {
 
   final String username;
   final int likes;
@@ -18,6 +18,14 @@ class FeedPost extends StatelessWidget {
   });
 
   @override
+  _FeedPostState createState() => _FeedPostState();
+}
+
+class _FeedPostState extends State<FeedPost> {
+  bool isLiked = false;
+  bool displayHeart = false;
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,10 +39,10 @@ class FeedPost extends StatelessWidget {
                 children: <Widget>[
                   CircleAvatar(
                     radius: 20.0,
-                    backgroundImage: AssetImage(profilePicture),
+                    backgroundImage: AssetImage(widget.profilePicture),
                   ),
                   SizedBox(width: 10.0),
-                  Text(username, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0)),
+                  Text(widget.username, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0)),
                 ],
               ),
               Icon(Icons.more_vert)
@@ -42,10 +50,36 @@ class FeedPost extends StatelessWidget {
           ),
         ),
 
-        Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.width,
-          child: Image.asset(image, fit: BoxFit.cover),
+        GestureDetector(
+          onDoubleTap: () {
+            setState(() {
+              isLiked = !isLiked;
+              displayHeart = true;
+            });
+            Future.delayed(const Duration(milliseconds: 750), () {
+              setState(() {
+                displayHeart = false;
+              });
+            });
+          },
+          child: displayHeart == true ? Stack(
+            children: <Widget>[
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.width,
+                child: Image.asset(widget.image, fit: BoxFit.cover),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.width,
+                child: Center(child: Icon(FontAwesomeIcons.solidHeart, color: Colors.white, size: 80.0))
+              ),
+            ],
+          ) : Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.width,
+            child: Image.asset(widget.image, fit: BoxFit.cover),
+          ),
         ),
 
         Container(
@@ -55,7 +89,7 @@ class FeedPost extends StatelessWidget {
             children: <Widget>[
               Row(
                 children: <Widget>[
-                  Icon(FontAwesomeIcons.heart, size: 25.0),
+                  isLiked == true ? Icon(FontAwesomeIcons.solidHeart, color: Colors.red, size: 25.0) : Icon(FontAwesomeIcons.heart, size: 25.0),
                   SizedBox(width: 15.0),
                   Icon(FontAwesomeIcons.comment, size: 25.0),
                   SizedBox(width: 15.0),
@@ -70,12 +104,12 @@ class FeedPost extends StatelessWidget {
 
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 15.0),
-          child: Text('$likes likes', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0)),
+          child: Text('${widget.likes} likes', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0)),
         ),
 
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
-          child: Text('$time ago', style: TextStyle(fontSize: 12.0, color: Colors.grey)),
+          child: Text('${widget.time} ago', style: TextStyle(fontSize: 12.0, color: Colors.grey)),
         )
       ],
     );

@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:instagram_ui_flutter/pages/messages_page.dart';
 import 'package:instagram_ui_flutter/widgets/feed_post.dart';
 
 class HomeTab extends StatelessWidget {  
+
+  Future _launchCamera() async {
+    final _image = await ImagePicker().getImage(source: ImageSource.camera);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +21,10 @@ class HomeTab extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Icon(FontAwesomeIcons.camera, color: Colors.black, size: 30.0),
+              GestureDetector(
+                onTap: _launchCamera,
+                child: Icon(FontAwesomeIcons.camera, color: Colors.black, size: 30.0)
+              ),
               SizedBox(width: 30.0),
               Text('Instagram', style: TextStyle(color: Colors.black, fontFamily: 'Billabong', fontSize: 30.0))
             ],

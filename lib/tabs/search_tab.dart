@@ -163,7 +163,7 @@ class SearchTab extends StatelessWidget {
                         Container(
                           width: MediaQuery.of(context).size.width/3 - 2,
                           height: MediaQuery.of(context).size.width/3 - 2,
-                          child: Image.asset('assets/story8.jpg', fit: BoxFit.cover),
+                          child: Image.asset('assets/playstation.jpg', fit: BoxFit.cover),
                         ),
                         Container(
                           width: MediaQuery.of(context).size.width/3 - 2,
@@ -226,7 +226,7 @@ class SearchTab extends StatelessWidget {
                         Container(
                           width: MediaQuery.of(context).size.width/3 - 2,
                           height: MediaQuery.of(context).size.width/3 - 2,
-                          child: Image.asset('assets/story1.jpg', fit: BoxFit.cover),
+                          child: Image.asset('assets/xbox.jpeg', fit: BoxFit.cover),
                         ),
                       ],
                     ),
