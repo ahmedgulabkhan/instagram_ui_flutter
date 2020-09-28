@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:instagram_ui_flutter/pages/messages_page.dart';
 import 'package:instagram_ui_flutter/widgets/feed_post.dart';
+import 'package:instagram_ui_flutter/widgets/stories_widget.dart';
 
 class HomeTab extends StatelessWidget {  
 
@@ -45,6 +46,7 @@ class HomeTab extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            StoriesWidget(),
             FeedPost(username: 'samwilson', likes: 102, time: '2 hours', profilePicture: 'assets/Sam Wilson.jpg', image: 'assets/story1.jpg'),
             FeedPost(username: 'eddisonalfred', likes: 156, time: '6 hours', profilePicture: 'assets/eddison.jpg', image: 'assets/story2.jpg'),
             FeedPost(username: 'adelle_klarke', likes: 56, time: '2 days', profilePicture: 'assets/adelle.jpg', image: 'assets/story3.jpg'),
